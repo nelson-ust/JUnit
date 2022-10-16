@@ -8,5 +8,8 @@ public class Calculator {
     static double product(double... operands){
         return DoubleStream.of(operands).reduce(1,(a,b)->a*b);
     }
+    static double difference(double x, double y){
+        return x-y;
+    }
 
 }

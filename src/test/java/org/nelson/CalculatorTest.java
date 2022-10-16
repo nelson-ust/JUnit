@@ -20,4 +20,11 @@ class CalculatorTest {
                 ()->assertEquals(-4,Calculator.product(2,-2)),
                 ()->assertEquals(9,Calculator.product(3,3)));
     }
+    @Test
+    @DisplayName("Difference of two numbers")
+    void difference(){
+        assertAll(()->assertEquals(5,Calculator.difference(8,3)),
+                ()->assertEquals(4,Calculator.difference(8,4))
+        );
+    }
 }
